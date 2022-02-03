@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
   </head>
   <body>
+    <!--Шапка-->
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo">
@@ -36,7 +40,7 @@
           </li>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link-button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -46,6 +50,7 @@
       <div class="welcome">
         <img src="images/welcome.svg" alt="Добро пожаловать в прекрасную Седону." width="458" height="352">
       </div>
+      <!--Преимущества-->
       <section class="advantages">
         <div class="description">
           <h2>Седона — небольшой городок в Аризоне,
@@ -60,49 +65,49 @@
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
           своя жизнь</p>
             <img class="advantages-picture" src="images/photo-1.jpg" alt="фотография города Седона." width="800" height="384">
-              <ul class="advantages-town-list">
-                <li class="advantages-town-item">
-                <h3 class="advantages-town-title">Жильё</h3>
-                <p class="advantages-town-description">Рекомендуем пожить
+              <ul class="advantages-list">
+                <li class="advantages-item-light">
+                <h3 class="advantages-title">Жильё</h3>
+                <p class="advantages-description">Рекомендуем пожить
                 в настоящем мотеле,
                 всё как в кино!</p>
                 </li>
-                <li class="advantages-town-item">
-                <h3 class="advantages-town-title">Еда</h3>
-                <p class="advantages-town-description">Всегда заказывайте
+                <li class="advantages-item">
+                <h3 class="advantages-title">Еда</h3>
+                <p class="advantages-description">Всегда заказывайте
                  топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="advantages-town-item">
-                <h3 class="advantages-town-title">Сувениры</h3>
-                <p class="advantages-town-description">Не только китайского,
+                <li class="advantages-item-light">
+                <h3 class="advantages-title">Сувениры</h3>
+                <p class="advantages-description">Не только китайского,
                 но и настоящего местного производства!</p>
                 </li>
               </ul>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item-dark">
             <img class="advantages-picture" src="images/photo-2.jpg" alt="Мост дьявола." width="800" height="384">
-          <h3 class="advantages-title">Там есть
+          <h3 class="advantages-title-dark">Там есть
             мост дьявола</h3>
             <span class="advantages-number">— №2 —</span>
             <p class="advantages-description">Да, по нему можно пройти!
               Если вы осмелитесь,
               разумеется</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-light">
           <h3 class="advantages-title">Небольшая
             площадь</h3>
             <span class="advantages-number">— №3 —</span>
             <p class="advantages-description">Все достопримечательности
               находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-medium">
           <h3 class="advantages-title">Красивая
             дорога</h3>
             <span class="advantages-number">— №4 —</span>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-light">
           <h3 class="advantages-title">Мало
             туристов</h3>
             <span class="advantages-number">— №5 —</span>
@@ -110,12 +115,15 @@
           </li>
         </ol>
       </section>
+
+      <!--Форма поиска гостиницы-->
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <a class="search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
+      <!--Подписка-->
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,
@@ -127,6 +135,7 @@
       </section>
     </main>
 
+    <!--Подвал-->
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">мы в соцсети</h2>
