@@ -60,6 +60,11 @@ body {
   line-height: 36px;
 }
 
+.advantages-list-nested {
+  background-color: #ffffff;
+}
+
+/*Advanteges*/
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -68,7 +73,13 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-item-dark .advantages-title {
+.advantages-description-nested {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-title-dark {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -87,6 +98,10 @@ body {
 
 .advantages-item-medium {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list-nested {
+  background-color: #ffffff;
 }
 
 .button {
@@ -136,6 +151,10 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.subscription-picture .subscription-title {
+  color: #ffffff;
 }
 
 .subscription-form {
