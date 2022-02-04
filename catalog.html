@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
   </head>
   <body>
+    <!--Шапка-->
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -39,13 +43,15 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link button button-brown" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-inner">
+
+      <!--Фильтр-->
       <section class="inner-filter">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -108,14 +114,15 @@
               </li>
             </ul>
         </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button apply-button" type="submit">Применить</button>
             <button class="button-reset" type="reset">Сбросить</button>
       </form>
       </section>
 
+      <!--Каталог-->
       <section class="catalog">
         <div class="select">
-          <p> Найдено гостиниц:<span>38</span></p>
+          <p> Найдено гостиниц:<span> 38</span></p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
@@ -123,17 +130,17 @@
           </select>
           <ul class="options">
             <li class="options-item">
-              <a class="options-link-border" href="#">
+              <a class="options-link" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
-            <li class="option-item">
-              <a href="#" class="option-link">
+            <li class="options-item">
+              <a href="#" class="options-link">
                 <span class="visually-hidden">Показать слайд-шоу</span>
               </a>
             </li>
-            <li class="option-item">
-              <a href="#" class="option-link">
+            <li class="options-item">
+              <a href="#" class="options-link">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </li>
@@ -151,12 +158,12 @@
                 <p>От 4000 ₽</p>
               </div>
               <div class="button-action">
-                <a class="hotel-card-button button"  href="#">Подробнее</a>
-                <a class="hotel-card-button-favorites button"  href="#">В избранное</a>
+                <a class="hotel-card-button button form-button button-brown"  href="#">Подробнее</a>
+                <a class="hotel-card-button-favorites button form-button button-blue"  href="#">В избранное</a>
               </div>
               <div class="hotel-card-rating">
                 <span>4 звездочки</span>
-                <span>Рейтинг: 8,5 </span>
+                <span class="rating">Рейтинг: 8,5 </span>
               </div>
             </li>
             <li class="hotel-card">
@@ -169,12 +176,12 @@
                 <p>От 3000 ₽</p>
               </div>
               <div class="button-action">
-                <a class="hotel-card-button button"  href="#">Подробнее</a>
-                <a class="hotel-card-button-favorites button"  href="#">В избранное</a>
+                <a class="hotel-card-button button form-button button-brown"  href="#">Подробнее</a>
+                <a class="hotel-card-button-favorites button form-button button-blue"  href="#">В избранное</a>
               </div>
               <div class="hotel-card-rating">
                 <span>3 звездочки</span>
-                <span>Рейтинг: 8,9 </span>
+                <span class="rating">Рейтинг: 8,9 </span>
               </div>
             </li>
             <li class="hotel-card">
@@ -187,12 +194,12 @@
                 <p>От 2000 ₽</p>
               </div>
               <div class="button-action">
-                <a class="hotel-card-button button"  href="#">Подробнее</a>
-                <a class="hotel-card-button-favorites button"  href="#">В избранное</a>
+                <a class="hotel-card-button button form-button button-brown"  href="#">Подробнее</a>
+                <a class="hotel-card-button-favorites button form-button button-green"  href="#">В избранном</a>
               </div>
               <div class="hotel-card-rating">
                 <span>2 звездочки</span>
-                <span>Рейтинг: 9,2 </span>
+                <span class="rating">Рейтинг: 9,2 </span>
               </div>
             </li>
             <li class="hotel-card">
@@ -205,18 +212,19 @@
                 <p>От 3000 ₽</p>
               </div>
               <div>
-                <a class="hotel-card-button button"  href="#">Подробнее</a>
-                <a class="hotel-card-button-favorites button"  href="#">В избранное</a>
+                <a class="hotel-card-button button form-button button-brown"  href="#">Подробнее</a>
+                <a class="hotel-card-button-favorites button form-button button-blue"  href="#">В избранное</a>
               </div>
               <div class="hotel-card-rating">
                 <span>2 звездочки</span>
-                <span>Рейтинг: 9,2 </span>
+                <span class="rating">Рейтинг: 9,2 </span>
               </div>
             </li>
           </ul>
 
+        <!--Пагинация-->
         <div class="download">
-          <button class="button-pagination-download-more" type="button">Загрузить ещё</button>
+          <button class="button-pagination-download-more button" type="button">Загрузить ещё</button>
         </div>
         <div class="choice-pagination">
           <ul class="pagination">
@@ -224,21 +232,21 @@
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link button" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link button" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link button" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-more" href="#">...
+              <a class="pagination-link button pagination-more" href="#">...
                 <span class="visually-hidden">Показать больше</span>
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link button" href="#">10</a>
             </li>
           </ul>
 
@@ -254,6 +262,8 @@
           </div>
         </div>
       </section>
+
+      <!--Подписка-->
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,
@@ -265,9 +275,10 @@
       </section>
     </main>
 
+    <!--Подвал-->
     <footer class="page-footer">
       <section class="footer-social">
-        h2 class="visually-hidden">мы в соцсети</h2>
+        <h2 class="visually-hidden">мы в соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
@@ -289,11 +300,11 @@
 
       <div class="footer-contacts">
         <h2 class="visually-hidden">номер телефона</h2>
-          <a href="tel:+78128121212">>+7 (812) 812-12-12</a>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <div class="footer-link">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="images/logo_htmlacademy.svg" alt="логотип HTML Академии." width="114.9" height="32.9">
+          <img src="images/logo_htmlacademy.svg" alt="логотип HTML Академии." width="115" height="33">
         </a>
       </div>
     </footer>
