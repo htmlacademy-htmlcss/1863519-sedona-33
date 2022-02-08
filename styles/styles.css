@@ -26,15 +26,16 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #333333;
 }
 
 /* Pages*/
 .navigation {
   display: flex;
-  width: 1060px;
+  width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .navigation-logo {
@@ -72,25 +73,24 @@ body {
   flex-grow: 1;
 }
 
-.main-index {
-  text-align: center;
-}
-
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .welcome {
   background-image: url("../images/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .description {
   width: 720px;
   margin: 0 auto;
-}
+  text-align: center;
+ }
 
 
 .description h2 {
@@ -113,6 +113,7 @@ body {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .advantages-list-nested {
@@ -176,6 +177,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
@@ -183,11 +185,13 @@ body {
 .search p {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .search-button {
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
 }
 
 /*Subscription*/
@@ -233,6 +237,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .footer-social {
