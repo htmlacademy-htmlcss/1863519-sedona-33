@@ -41,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-/* Pages*/
+/* Navigation*/
 .navigation {
   display: flex;
   width: 1200px;
@@ -118,14 +118,13 @@ body {
 }
 
 .description {
-  width: 720px;
   margin: 0 auto;
   text-align: center;
 }
 
 
 .description h2 {
-    font-size: 30px;
+  font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
@@ -143,7 +142,6 @@ body {
 /*Advanteges*/
 .advantages-list {
   display: flex;
-
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -161,6 +159,7 @@ body {
 }
 
 .advantages-title {
+  width: 400px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -180,7 +179,6 @@ body {
 
 .advantages-description {
   width: 250px;
-  height: 73px;
   margin: 0 75px;
 }
 
@@ -198,11 +196,13 @@ body {
 
 .advantages-item-dark {
   display: flex;
-  flex-direction: column;
-  width: 1200px;
-  height: 384px;;
   flex-wrap: wrap;
   background-color: #83B3D3;
+}
+
+.advantages-item-dark-first,
+.advantages-item-dark-second {
+  width: 400px;
 }
 
 .advantages-item-light {
@@ -233,6 +233,7 @@ body {
 .search {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -240,7 +241,6 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
   margin-top: 90px;
@@ -254,7 +254,6 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 56px;
-  margin-left: 240px;
 }
 
 .search-button {
@@ -264,18 +263,18 @@ body {
   text-align: center;
   width: 575px;
   height: 60px;
-  margin: 0 312px 93px 312px;
+  margin-top: 0;
+  margin-bottom: 93px;
 }
 
 /*Subscription*/
 .subscription {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   margin: 0;
-  width: 800px;
 }
 
 .subscription-title {
@@ -289,8 +288,6 @@ body {
 }
 
 .subscription-description {
-  width: 720px;
-  margin-left: 240px;
   margin-bottom: 46px;
 }
 
@@ -302,7 +299,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-
+  margin-bottom: 93px;
 }
 
 .subscription-button {
@@ -355,13 +352,18 @@ body {
   margin-right: 0;
 }
 
-.footer-contacts a {
-  display: block;
+.footer-contacts {
   width: 720px;
   margin-top: 40px;
   margin-right: 54px;
+}
+
+
+.footer-contacts a {
+  display: block;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -374,15 +376,12 @@ body {
   margin-top: 42px;
   margin-right: 72px;
   margin-bottom: 44px;
+  margin-left: 0;
 }
-
-
 
 /*Filter*/
 
 .inner-filter {
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
   line-height: 23px;
   background-image: url("../images/catalog/catalog-background.jpg");
@@ -390,7 +389,7 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
   color: #ffffff;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .inner-filter h1{
@@ -398,8 +397,8 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin-top: 35px;
+  margin-left: 71px;
   margin-bottom: 5px;
-
 }
 
 .breadcrumbs {
@@ -407,6 +406,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 71px;
 }
 
 
@@ -416,6 +416,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   margin-right: 10px;
+}
+
+.filter {
+  display: flex;
+  margin-left: 71px;
 }
 
 .filter-title {
@@ -431,13 +436,21 @@ body {
   list-style-type: none;
 }
 
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+
+}
 
 .apply-button {
+  width: 160px;
   font-size: 16px;
   line-height: 21px;
+  margin-bottom: 20px;
 }
 
 .button-reset {
+  width: 160px;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -456,12 +469,19 @@ body {
 
 .select {
   display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 53px;
+  margin: 0;
+}
+
+.select-result {
+  margin-top: 50px;
+  margin-right: 192px;
+  margin-bottom: 56px;
 }
 
 .select-control {
@@ -469,6 +489,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+
 }
 
 .options {
@@ -509,6 +530,7 @@ body {
 }
 
 .hotel-card-filter {
+  display: flex;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -569,9 +591,12 @@ body {
 }
 
 .number {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-left: auto;
 }
 
 .subscription-inner {
