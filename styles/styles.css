@@ -51,14 +51,14 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  position: relative;
 }
 
 .navigation-logo {
   position: absolute;
   width: 140px;
-  margin-left: 0;
-  padding-left: 70px;
-  top: 2px;
+  left: 70px;
+  /*top: 2px;*/
   }
 
 .navigation-list {
@@ -142,7 +142,7 @@ body {
   font-size: 10px;
   line-height: 1px;
   text-align: center;
-  padding-top: 8px;;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
@@ -155,9 +155,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin-top: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   margin-left: 20px;
-  padding: 6px 31px;
+  padding: 6px 31px 5px 31px;
 }
 
 .main-container {
@@ -303,7 +303,7 @@ body {
   background-color: #83B3D3;
   text-align: center;
   text-decoration: none;
-  border: 3px solid rgba(131, 179, 211, 0);
+  border: 3px solid transparent;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -429,7 +429,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/subscription-background.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
 }
@@ -504,9 +504,10 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  border: 3px solid #83B3D3;
+  border: 3px solid transparent;
   box-sizing: border-box;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .footer-contacts-phone:hover,
@@ -515,7 +516,7 @@ body {
 }
 
 .footer-contacts-phone:focus,
-.htmlacademy-link:focus svg{
+.htmlacademy-link:focus {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
@@ -529,24 +530,20 @@ body {
 
 .footer-link {
   display: block;
-  width: 115px;
-  margin-top: 42px;
-  margin-right: 72px;
-  margin-left: 0;
-
+  margin-top: 23px;
+  margin-right: 49px;
 }
 
 .htmlacademy-link {
-  border: 3px solid #83B3D3;
+  display: block;
+  border: 3px solid transparent;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 16px 20px;
-
 }
 
 .footer-link svg {
   color:#000000;
-
 }
 
 
