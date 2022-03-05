@@ -132,7 +132,7 @@
         <section class="catalog">
           <div class="select">
             <p class="select select-result"> Найдено гостиниц:<span> 38</span></p>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control select-control-catalog" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
@@ -175,7 +175,12 @@
                   <a class="hotel-card-button-favorites button form-button"  href="#">В избранное</a>
                 </div>
                 <div class="hotel-card-rating">
-                  <span class="stars">4 звездочки</span>
+                  <div class="stars">
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                  </div>
                   <span class="rating">Рейтинг: 8,5 </span>
                 </div>
               </li>
@@ -193,7 +198,11 @@
                   <a class="hotel-card-button-favorites button form-button"  href="#">В избранное</a>
                 </div>
                 <div class="hotel-card-rating">
-                  <span class="stars">3 звездочки</span>
+                  <div class="stars">
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                  </div>
                   <span class="rating">Рейтинг: 8,9 </span>
                 </div>
               </li>
@@ -211,7 +220,10 @@
                   <a class="hotel-card-button-favorites button form-button button-green"  href="#">В избранном</a>
                 </div>
                 <div class="hotel-card-rating">
-                  <span class="stars">2 звездочки</span>
+                  <div class="stars">
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                  </div>
                   <span class="rating">Рейтинг: 9,2 </span>
                 </div>
               </li>
@@ -229,7 +241,10 @@
                   <a class="hotel-card-button-favorites button form-button"  href="#">В избранное</a>
                 </div>
                 <div class="hotel-card-rating">
-                  <span class="stars">2 звездочки</span>
+                  <div class="stars">
+                    <span class="star">&nbsp</span>
+                    <span class="star">&nbsp</span>
+                  </div>
                   <span class="rating">Рейтинг: 9,2 </span>
                 </div>
               </li>
@@ -242,7 +257,7 @@
           <div class="choice-pagination">
             <ol class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
+                <a class="pagination-link button pagination-current">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link button" href="#">2</a>
@@ -264,9 +279,9 @@
             </ol>
 
 
-            <div class="number">
-              <p>Гостиниц на странице:</p>
-              <select class="select-control" aria-label="Количество гостиниц">
+            <div class="numbers">
+              <p class="hotel-numbers">Гостиниц на странице:</p>
+              <select class="select-control select-control-numbers " aria-label="Количество гостиниц">
                 <option value="number">4</option>
                 <option value="number">6</option>
                 <option value="number">8</option>

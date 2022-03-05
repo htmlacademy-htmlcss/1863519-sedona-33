@@ -308,16 +308,16 @@ body {
   border-radius: 4px;
 }
 
-.button:hover {
+.button:not(.button-pagination-download-more):hover {
   background-color: #68A2CA;
 }
 
-.button:focus {
+.button:not(.button-pagination-download-more):focus {
   background-color: #68A2CA;
   border: 3px solid #756257;
 }
 
-.button:active {
+.button:not(.button-pagination-download-more):active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
 }
@@ -387,7 +387,11 @@ body {
   align-items: center;
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
+.subscription-inner {
+  padding-top: 73px;
+  padding-bottom: 140px;
 }
 
 .subscription-title {
@@ -397,19 +401,20 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 47px;
 }
 
 .subscription-description {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   text-align: center;
 }
 
 .subscription-picture .subscription-title {
   color: #ffffff;
+  margin-bottom: 29px;
 }
 
 .subscription-form {
@@ -742,15 +747,15 @@ body {
 
 }
 
-.select-control:hover,
-.select-control:focus,
+.select-control-catalog:hover,
+.select-control-catalog:focus,
 .options-link:hover,
 .options-link:focus {
   border: 2px solid #83B3D3;
   border-radius: 4px;
 }
 
-.select-control:active {
+.select-control-catalog:active {
   opacity: 0.3;
 }
 
@@ -952,20 +957,47 @@ body {
 }
 
 .stars {
+  display: flex;
+  width: 91px;
+}
+
+.star {
+  width: 18px;
   background-image: url("../images/star.svg");
   background-repeat: no-repeat;
+  margin-top: 12px;
+  margin-right: 7px;
+
 }
 
 /*Pagination*/
-
 .button-pagination-download-more {
+  position: relative;
   display: block;
   width: 620px;
-  height: 60px;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding: 14px;
+  margin: 60px auto;
+}
 
+.button-pagination-download-more::before {
+  position: absolute;
+  content: "";
+  width: 1055px;
+  height: 1px;
+  background-color: #E6E6E6;
+  top: -37px;
+  left: -220px;
+}
+
+.button-pagination-download-more::after {
+  position: absolute;
+  content: "";
+  width: 1055px;
+  height: 1px;
+  background-color: #E6E6E6;
+  bottom: -37px;
+  left: -220px;
 }
 
 .pagination {
@@ -994,15 +1026,20 @@ body {
   display: block;
   width: 55px;
   height: 55px;
-  margin-top: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 14px;
 }
 
 .pagination-current {
   background-color: #f2f2f2;
+  color:#000000;
 }
 
-.number {
+
+.numbers {
   display: flex;
+  width: 386px;
   align-items: center;
   font-size: 18px;
   line-height: 23px;
@@ -1010,3 +1047,10 @@ body {
   margin-left: auto;
 }
 
+.hotel-numbers {
+  margin-right: 51px;
+}
+
+.select-control-numbers {
+  width: 160px;
+}
