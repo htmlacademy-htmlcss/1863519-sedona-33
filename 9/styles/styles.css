@@ -308,16 +308,16 @@ body {
   border-radius: 4px;
 }
 
-.button:not(.button-pagination-download-more):hover {
+.button:hover {
   background-color: #68A2CA;
 }
 
-.button:not(.button-pagination-download-more):focus {
+.button:focus {
   background-color: #68A2CA;
   border: 3px solid #756257;
 }
 
-.button:not(.button-pagination-download-more):active {
+.button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
 }
@@ -800,9 +800,10 @@ body {
   grid-template-columns: repeat(3, 340px);
   gap: 18px;
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
+  padding-bottom: 34px;
   list-style-type: none;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card {
@@ -811,36 +812,41 @@ body {
   padding: 20px;
 }
 
+.hotel-card-link {
+   display: inline-block;
+   width: 299px;
+   height: 206px;
+   border: 3px solid transparent;
+   margin-bottom: 16px;
+ }
+
 .hotel-card-image {
   object-fit: contain;
-  border: 3px solid transparent;
-  margin-bottom: 13px;
 }
 
-.hotel-card-image:hover {
+.hotel-card-link:hover {
   opacity: 0.6;
 }
 
-.hotel-card-image:focus {
+.hotel-card-link:focus {
   border: 3px solid #83B3D3;
 }
 
-.hotel-card-image:active {
+.hotel-card-link:active {
   opacity: 0.3;
-}
-
-.hotel-card-link {
-  color: #000000;
-  text-decoration: none;
 }
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  text-decoration: none;
+  color: #000000;
   margin: 0;
   margin-bottom: 16px;
+}
+
+.hotel-card-title-link {
+  text-decoration: none;
 }
 
 .hotel-card-filter {
@@ -873,31 +879,28 @@ body {
 
 .hotel-card-button-favorites {
   width: 140px;
-  box-sizing: border-box;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
+  padding: 8px 2px 9px 2px;
+
 }
 
 .hotel-card-button-favorites:hover {
   background-color: #68A2CA;
   border: 1px solid #756257;
-  border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 9px;
+
 }
 
 .hotel-card-button-favorites:focus {
   background-color: #68A2C2;
   border: 3px solid #756257;
-  border-radius: 4px;
+  padding: 6px 0 7px 0;
+
 }
 
 .hotel-card-button-favorites:active {
   background-color: #68A2CA;
   border: 1px solid #756257;
-  border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 9px;
   color:rgba(255, 255, 255, 0.3);
 }
 
@@ -909,24 +912,15 @@ body {
 
 .button-green:hover {
   background-color: #6C9E42;
-  border: 1px solid #756257;
-  border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 9px;
 }
 
 .button-green:focus {
   background-color: #6C9E42;
   border: 3px solid #756257;
-  border-radius: 4px;
 }
 
 .button-green:active {
   background-color: #6C9E42;
-  border: 1px solid #756257;
-  border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 9px;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -954,20 +948,27 @@ body {
   text-transform: uppercase;
   padding-top: 9px;
   padding-bottom: 10px;
+
 }
 
 .stars {
-  display: flex;
-  width: 91px;
-}
-
-.star {
-  width: 18px;
+  display: block;
   background-image: url("../images/star.svg");
-  background-repeat: no-repeat;
+  background-repeat: space no-repeat;
   margin-top: 12px;
   margin-right: 7px;
+}
 
+.star-four {
+width: 89px;
+}
+
+.star-three {
+  width: 68px;
+}
+
+.star-two {
+  width: 43px;
 }
 
 /*Pagination*/
@@ -977,27 +978,13 @@ body {
   width: 620px;
   text-align: center;
   padding: 14px;
-  margin: 60px auto;
+  margin: 0 auto;
 }
 
-.button-pagination-download-more::before {
-  position: absolute;
-  content: "";
-  width: 1055px;
-  height: 1px;
-  background-color: #E6E6E6;
-  top: -37px;
-  left: -220px;
-}
-
-.button-pagination-download-more::after {
-  position: absolute;
-  content: "";
-  width: 1055px;
-  height: 1px;
-  background-color: #E6E6E6;
-  bottom: -37px;
-  left: -220px;
+.download {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .pagination {
@@ -1009,6 +996,7 @@ body {
 
 .choice-pagination {
   display: flex;
+  padding-top: 30px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1031,11 +1019,19 @@ body {
   padding-top: 14px;
 }
 
-.pagination-current {
+.button-pagination-current {
   background-color: #f2f2f2;
   color:#000000;
+  border: none;
 }
 
+.button-pagination-current:hover,
+.button-pagination-current:focus,
+.button-pagination-current:active {
+  background-color: #f2f2f2;
+  color:#000000;
+  border: none;
+}
 
 .numbers {
   display: flex;
