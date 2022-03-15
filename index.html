@@ -120,6 +120,7 @@
             <a class="search-button button button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <!--Подписка-->
+        <!-- Класс field-invalid для input показывает ошибку если плейсхолдер заполнен некорректно-->
         <section class="subscription subscription-picture">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама,<br>
@@ -181,26 +182,32 @@
       <div class="modal modal-search">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group search-form-date">
+            <div class="field-group search-form-date">
               <label class="form-label" for="search-date">Дата заезда:</label>
               <input class="modal-field-date" type="text" id="search-date" name="arrival-date" placeholder="27 апреля 2020">
-                <p class="arrival-info">Мы не можем отправить вас в прошлое.</p>
-            </p>
-            <p class="field-group search-form-date">
+                <span class="field-date-info check-in-date-info error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field-group search-form-date">
               <label class="form-label" for="search-date">Дата выезда:</label>
               <input class="modal-field-date" type="text" id="search-date" name="departure-date" placeholder="1 сентября 2021">
-                <p class="arrival-info">На эти даты есть свободные номера. Пока есть.</p>
-            </p>
-            <div class="wraper-form-number">
-            <p class="field-group search-form-number">
+                <span class="field-date-info check-out-date-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="wrapper-form-number">
+            <div class="field-group search-form-number">
               <label class="form-label form-label-adults" for="search-number">Взрослые:</label>
+                <button class="number-button-minus-adults" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
               <input class="modal-field-number" type="number" id="search-number" name="adults-number" placeholder="2">
-            </p>
-            <p class="field-group search-form-number">
+                <button class="number-button-plus-adults" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            <div class="field-group search-form-number">
               <span class="form-label form-label-children">
                 <label class="form-label form-label-children" for="search-number">Дети:</label>
                 <span class="tooltip">
@@ -212,12 +219,17 @@
                 </span>
               </span>
 
-
+              <button class="number-button-minus-children" type="button">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
               <input class="modal-field-number" type="number" id="search-number" name="children-number" placeholder="1">
-            </p>
+                <button class="number-button-plus-children" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
             </div>
+            </div>
+            <a class="model-search-button button" href="catalog.html">Найти</a>
           </form>
-          <a class="model-search-button button" href="catalog.html">Найти</a>
         </section>
       </div>
     </div>
