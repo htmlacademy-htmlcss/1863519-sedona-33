@@ -667,6 +667,7 @@ body {
 }
 
 .field-group {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -678,7 +679,6 @@ body {
 }
 
 .modal-field-date {
-  position: relative;
   background-color: #F2F2F2;
   border-radius: 4px;
   border: 2px solid transparent;
@@ -720,7 +720,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  margin-left: 155px;
+  top: 45px;
+  left: 155px;
   padding: 0;
 }
 
@@ -728,18 +729,9 @@ body {
   color: #ff5775;
 }
 
-.check-in-date-info{
-  top: 204px;
-}
-
-.check-out-date-info {
-  top:294px;
-}
-
 .wrapper-form-number {
   display: flex;
   justify-content: space-between;
-
 }
 
 .modal-field-number {
@@ -761,94 +753,87 @@ body {
 }
 
 .form-label-adults {
-  position: relative;
   padding-right: 79px;
 }
 
-.number-button-minus-adults,
-.number-button-plus-adults {
+.button-number {
   position: absolute;
   width: 25px;
   height: 25px;
   outline: none;
   border: none;
-  border: 3px solid #83B3D3;
+  border: 3px solid transparent;
   border-radius: 4px;
+  z-index: 1;
+  opacity: 0.3;
 }
 
-.number-button-minus-adults {
-  top: 354px;
-  left: 250px;
+.button-number:hover {
+  opacity: 1;
 }
 
-.number-button-minus-adults::before,
-.number-button-plus-adults::before,
-.number-button-plus-adults::after {
+.button-number:focus {
+  opacity: 1;
+  border: 3px solid #83B3D3;
+}
+
+.button-number:active {
+  opacity: 0.2;
+}
+
+.button-number-minus::before {
   position: absolute;
   left: 3px;
   width: 13px;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #000000;
   content: "";
-
 }
 
-.number-button-plus-adults::after {
+.button-number-plus::before,
+.button-number-plus::after {
+  position: absolute;
+  left: 3px;
+  width: 13px;
+  height: 1px;
+  background-color: #000000;
+  content: "";
+}
+
+.button-number-plus::after {
   transform: rotate(-90deg);
 }
 
-.number-button-plus-adults {
-  top: 354px;
-  left: 325px;
+.field-group-adults .button-number-minus {
+  top: 12px;
+  left: 180px;
 }
 
+.field-group-adults .button-number-plus {
+  top: 12px;
+  left: 255px;
+}
+
+.field-group-children .button-number-minus {
+  top: 12px;
+  right: 95px;
+}
+
+.field-group-children .button-number-plus {
+  top: 12px;
+  right: 20px;
+}
+
+
 .form-label-children {
-  position: relative;
   width: 54px;
   margin-right: 43px;
 }
 
-.number-button-minus-children,
-.number-button-plus-children {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  outline: none;
-  border: none;
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.number-button-minus-children {
-  top: 354px;
-  left: 528px;
-}
-
-.number-button-minus-children::before,
-.number-button-plus-children::before,
-.number-button-plus-children::after {
-  position: absolute;
-  left: 3px;
-  width: 13px;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
-}
-
-.number-button-plus-children::after{
-  transform: rotate(-90deg);
-}
-
-.number-button-plus-children {
-  top: 354px;
-  left: 600px;
-}
-
-
 /*Tooltip*/
 .tooltip {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 54px;
 }
 
@@ -921,9 +906,9 @@ display: none;
   border-radius: 10px;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 /*Filter*/
 

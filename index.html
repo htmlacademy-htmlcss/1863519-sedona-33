@@ -188,26 +188,26 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group search-form-date">
               <label class="form-label" for="search-date">Дата заезда:</label>
-              <input class="modal-field-date" type="text" id="search-date" name="arrival-date" placeholder="27 апреля 2020">
+              <input class="modal-field-date" type="text" id="search-date" name="arrival-date" value="27 сентября 2020" placeholder="Укажите дату" required>
                 <span class="field-date-info check-in-date-info error">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="field-group search-form-date">
               <label class="form-label" for="search-date">Дата выезда:</label>
-              <input class="modal-field-date" type="text" id="search-date" name="departure-date" placeholder="1 сентября 2021">
+              <input class="modal-field-date" type="text" id="search-date" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату" required>
                 <span class="field-date-info check-out-date-info">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="wrapper-form-number">
-            <div class="field-group search-form-number">
+            <div class="field-group field-group-adults">
               <label class="form-label form-label-adults" for="search-number">Взрослые:</label>
-                <button class="number-button-minus-adults" type="button">
+                <button class="button-number button-number-minus" type="button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-              <input class="modal-field-number" type="number" id="search-number" name="adults-number" placeholder="2">
-                <button class="number-button-plus-adults" type="button">
+              <input class="modal-field-number" type="number" id="search-number" name="adults-number" placeholder="2" required>
+                <button class="button-number button-number-plus" type="button">
                     <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
-            <div class="field-group search-form-number">
+            <div class="field-group field-group-children">
               <span class="form-label form-label-children">
                 <label class="form-label form-label-children" for="search-number">Дети:</label>
                 <span class="tooltip">
@@ -219,16 +219,16 @@
                 </span>
               </span>
 
-              <button class="number-button-minus-children" type="button">
+              <button class="button-number button-number-minus" type="button">
                 <span class="visually-hidden">Уменьшить</span>
               </button>
-              <input class="modal-field-number" type="number" id="search-number" name="children-number" placeholder="1">
-                <button class="number-button-plus-children" type="button">
+              <input class="modal-field-number" type="number" id="search-number" name="children-number" placeholder="1" required>
+                <button class="button-number button-number-plus" type="button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
             </div>
             </div>
-            <a class="model-search-button button" href="catalog.html">Найти</a>
+            <button class="model-search-button button" type="submit" >Найти</button>
           </form>
         </section>
       </div>
