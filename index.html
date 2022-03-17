@@ -120,12 +120,14 @@
             <a class="search-button button button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <!--Подписка-->
+        <!-- Класс field-invalid для input показывает ошибку если плейсхолдер заполнен некорректно-->
         <section class="subscription subscription-picture">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама,<br>
             честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscription-form">Ваш e-mail</label>
+              <label class="visually-hidden" for="subscription-email">Ваш e-mail</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
               <button class="button subscription-button " type="submit">Подписаться</button>
             </form>
         </section>
@@ -176,5 +178,60 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group search-form-date">
+              <label class="form-label" for="search-date">Дата заезда:</label>
+              <input class="modal-field-date" type="text" id="search-date" name="arrival-date" value="27 сентября 2020" placeholder="Укажите дату" required>
+                <span class="field-date-info check-in-date-info error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field-group search-form-date">
+              <label class="form-label" for="search-date">Дата выезда:</label>
+              <input class="modal-field-date" type="text" id="search-date" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату" required>
+                <span class="field-date-info check-out-date-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="wrapper-form-number">
+            <div class="field-group field-group-adults">
+              <label class="form-label form-label-adults" for="search-number">Взрослые:</label>
+                <button class="button-number button-number-minus" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+              <input class="modal-field-number" type="number" id="search-number" name="adults-number" placeholder="2" required>
+                <button class="button-number button-number-plus" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            <div class="field-group field-group-children">
+              <span class="form-label form-label-children">
+                <label class="form-label form-label-children" for="search-number">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle button" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff">
+                      <path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br>до 6 лет размещаются <br>бесплатно.</span>
+                </span>
+              </span>
+
+              <button class="button-number button-number-minus" type="button">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input class="modal-field-number" type="number" id="search-number" name="children-number" placeholder="1" required>
+                <button class="button-number button-number-plus" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+            </div>
+            </div>
+            <button class="model-search-button button" type="submit" >Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
