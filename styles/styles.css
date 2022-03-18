@@ -1271,7 +1271,7 @@ display: none;
 
 .button-reset {
   width: 100px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
