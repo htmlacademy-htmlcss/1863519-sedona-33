@@ -59,6 +59,7 @@ body {
   width: 140px;
   left: 70px;
   outline: none;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -1358,17 +1359,21 @@ display: none;
   opacity: 0.3;
 }
 
+.select-control-catalog {
+  margin-right: 15px;
+}
+
 .options {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 12px;
   margin-left: auto;
   padding: 0;
 }
 
 .options-item {
   margin-right: 8px;
+  margin-bottom: 8px;
   padding: 0;
   list-style-type: none;
 }
