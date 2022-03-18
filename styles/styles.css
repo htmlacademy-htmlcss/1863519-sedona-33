@@ -59,6 +59,7 @@ body {
   width: 140px;
   left: 70px;
   outline: none;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -74,6 +75,11 @@ body {
 .navigation-items {
   margin-right: 17px;
   margin-left: 17px;
+  padding-bottom: 20px;
+}
+
+.navigation-link-current {
+  position: relative;
 }
 
 .navigation-link-current::before {
@@ -87,10 +93,12 @@ body {
 }
 
 .navigation-user {
-  max-width: 310px;
+  justify-content: flex-end;
+  max-width: 430px;
   margin-left: auto;
-  margin-right: 24px;
+  margin-right: 70px;
   padding: 0;
+
 }
 
 .navigation-link {
@@ -172,8 +180,10 @@ body {
 }
 
 .welcome {
+  position: relative;
   padding-top: 51px;
   padding-bottom: 82px;
+  margin-bottom: 1px;
   background-color: #83B3D3;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-size: 100%, cover;
@@ -473,7 +483,7 @@ body {
 .subscription-picture {
   color: #ffffff;
   background-color: #000000;
-  background-image: url(../images/subscription-background.jpg);
+  background-image: url("../images/subscription-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
@@ -641,7 +651,7 @@ body {
   background-color: #f2f2f2;
   border: 3px solid transparent;
   border-radius: 50%;
-  background-image: url(../images/modal-close.svg);
+  background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -749,6 +759,7 @@ body {
 .modal-field-number {
   width: 133px;
   text-align: center;
+  color: #000000;
   background-color: #F2F2F2;
   border-radius: 4px;
   padding-top: 5px;
@@ -756,6 +767,10 @@ body {
   border: none;
   appearance: none;
   -moz-appearance: textfield;
+}
+
+.modal-field-number::placeholder {
+  color:#000000;
 }
 
 .modal-field-number::-webkit-outer-spin-button,
@@ -893,7 +908,7 @@ display: none;
 
 .tooltip-text::after {
   content: "";
-  background-image: url(../images/tooltip-triangle.svg);
+  background-image: url("../images/tooltip-triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1344,17 +1359,21 @@ display: none;
   opacity: 0.3;
 }
 
+.select-control-catalog {
+  margin-right: 15px;
+}
+
 .options {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 12px;
   margin-left: auto;
   padding: 0;
 }
 
 .options-item {
   margin-right: 8px;
+  margin-bottom: 8px;
   padding: 0;
   list-style-type: none;
 }
