@@ -665,7 +665,7 @@ body {
 .field-group,
 .modal-field-date,
 .modal-field-number {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1310,7 +1310,7 @@ display: none;
 
 .select-control {
   display: flex;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
